@@ -3,8 +3,8 @@ import cors from 'cors'
 import logger from 'morgan'
 import {createServer} from 'node:http'
 
-const PORT = 3000
-const IP = '192.168.1.13' //sustituye por tu IP local
+const PORT = 1234
+const IP = '192.168.1.9' //sustituye por tu IP local
 
 const app = express()
 const server = createServer(app)
@@ -17,7 +17,8 @@ const datos = []
 app.use(logger('dev'))
 
 app.get('/', (req, res) => {
-    res.sendFile(process.cwd() + '/cliente/index.html')
+    // res.sendFile(process.cwd() + '/cliente/index.html')
+    // res.sendFile(process.cwd() + '/cliente/index.js')
 })
 
 app.get('/data',(req, res) => {
@@ -36,6 +37,7 @@ app.post('/data', (req, res) => {
         datos.push(nuevaLectura);
     }
     console.log('Zona: ', datos[0].zona + '\nDecibeles: ', datos[0].decibelios + '\nFecha: ', datos[0].fecha);
+    res.json({ mensaje: 'Datos recibidos' });
 })
 
 server.listen(PORT, () => {

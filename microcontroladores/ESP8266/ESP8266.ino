@@ -17,7 +17,7 @@ const char* ssid = "Mega_2.4G_FBE8";
 const char* password = "26cKT2SZ";
 
 // URL del servidor
-const char* serverUrl = "http://192.168.1.13:3000/data"; // Cambia por la URL por la de tu servidor local
+const char* serverUrl = "http://192.168.1.9:1234/data"; // Cambia por la URL por la de tu servidor local
 
 void setup() {
     Serial.begin(115200);
@@ -52,9 +52,9 @@ void loop() {
             Serial.print("Decibelios enviados: ");
             Serial.println(soundLevel);
         } else {
-            Serial.print("Error al enviar los datos. Codigo de respuesta: ");
-            Serial.println(httpResponseCode);
-        }
+            Serial.print("Error en HTTP: ");
+            Serial.println(http.errorToString(httpResponseCode).c_str());
+         }
 
         http.end();
     }
