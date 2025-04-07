@@ -21,6 +21,5 @@ se utilizaron microcontroladores y sensores de sonido para detectar el ruido y r
     npm install 
 
 ## Ejecucion del programa
-    ```bash
     npm run dev
 
