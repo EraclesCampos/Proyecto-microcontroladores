@@ -17,8 +17,10 @@ se utilizaron microcontroladores y sensores de sonido para detectar el ruido y r
     git clone https://github.com/EraclesCampos/Proyecto-microcontroladores.git
     cd Proyecto # Importante entrar a la carpeta del poryecto!
 2. Instalar las dependencias
+    ```bash
     npm install 
 
 ## Ejecucion del programa
+    ```bash
     npm run dev
 
