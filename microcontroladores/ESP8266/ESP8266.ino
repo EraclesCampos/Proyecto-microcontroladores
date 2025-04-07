@@ -17,7 +17,7 @@ const char* ssid = "Mega_2.4G_FBE8";
 const char* password = "26cKT2SZ";
 
 // URL del servidor
-const char* serverUrl = "http://192.168.1.9:1234/data"; // Cambia por la URL por la de tu servidor local
+const char* serverUrl = "http://192.168.1.9:3000/data"; // Cambia por la URL por la de tu servidor local
 
 void setup() {
     Serial.begin(115200);

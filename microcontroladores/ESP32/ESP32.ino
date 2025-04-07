@@ -12,11 +12,11 @@ const float dBReference = 94.0;       // Nivel de referencia para 1 Pa (94 dB SP
 const int sampleWindow = 50;          // Tiempo de muestreo en ms
 
 // Configuración de WiFi
-const char* ssid = "Mega_2.4G_FBE8";
-const char* password = "26cKT2SZ";
+const char* ssid = "Movil";
+const char* password = "ola123456";
 
 // URL del servidor
-const char* serverUrl = "http://192.168.1.13:3000/data"; // Cambia por la URL de tu servidor local
+const char* serverUrl = "http://192.168.133.193:3000/data"; // Cambia por la URL de tu servidor local
 
 void setup() {
     Serial.begin(115200);

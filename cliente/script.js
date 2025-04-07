@@ -1,10 +1,12 @@
+// Este script se encarga deobtener los datos de la API y actualizar la interfaz de usuario en tiempo rel
 async function obtenerDatos() {
     try {
-        const response = await fetch('http://192.168.100.5:3000/data');
-        const datos = await response.json();
+        const response = await fetch('http://192.168.1.9:3000/data');
+        const zonas = await response.json();
 
-        if (datos.length > 0) {
-            actualizarDatos(datos[0].zona, datos[0].decibelios, datos[0].fecha)
+        if (zonas.length > 0) {
+            zonas.forEach(zona => actualizarDatos(zona.zona, zona.decibelios, zona.fecha))
+            
         }
     } catch (error) {
         console.error("Error al obtener datos:", error);
@@ -33,4 +35,4 @@ function actualizarDatos(zona, decibeles, fecha) {
         barra.style.background = "red"
     }
 }
-setInterval(obtenerDatos, 2000);
+setInterval(obtenerDatos, 500);
