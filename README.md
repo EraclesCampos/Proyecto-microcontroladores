@@ -5,9 +5,9 @@ se utilizaron microcontroladores y sensores de sonido para detectar el ruido y r
 
 ## Caracteristicas
 - **Deteccion de ruido** con los siguientes microcontroladores:
-    -Raspberry pico
-    -ESP8266
-    -ESP32
+  -Raspberry pico
+  -ESP8266
+  -ESP32
 
 - **Interfaz web**: con la visualizacion de decibelios en tiempo real
 
