@@ -4,70 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monitor de Sensores</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Sensores</h1>
-        <div class="grid">
-            <div class="zona">
-                <h2>Zona <span id="zona1">?</span></h2>
-                <div class="contenido">
-                    <div class="info">
-                        <p>Decibeles: <span id="decibeles1">0</span> dB</p>
-                        <p>Fecha: <br><span id="fecha1">-</span></p>
-                    </div>
-                    <div class="barra-container">
-                        <div class="barra" id="barra1"></div>
-                    </div>
 
-                </div>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra-sup">
+                <img class="logo" src="img/logo.png" alt="">
+                <img class="navegacion__enlace" src="img/logo2.png" alt="">
             </div>
-
-            <div class="zona">
-                <h2>Zona <span id="zona2">?</span></h2>
-                <div class="contenido">
-                    <div class="info">
-                        <p>Decibeles: <span id="decibeles2">0</span> dB</p>
-                        <p>Fecha: <br><span id="fecha2">-</span></p>
+        </div>
+        <div class="header__texto">
+            <h1 class="no-margin texto">Sensores</h1>
+            
+        </div>
+    </header>
+    
+    <div class="contenedor contenido__main">
+        <div class="container">
+            <div class="grid">
+                <div class="zona">
+                    <h2>Zona <span id="zona1">?</span></h2>
+                    <div class="contenido">
+                        <div class="info">
+                            <p>Decibeles: <span id="decibeles1">0</span> dB</p>
+                            <p>Fecha: <br><span id="fecha1">-</span></p>
+                        </div>
+                        <div class="barra-container">
+                            <div class="barra" id="barra1"></div>
+                        </div>
                     </div>
-                    <div class="barra-container">
-                        <div class="barra" id="barra2"></div>
-                    </div>
-
                 </div>
-            </div>
-
-            <div class="zona">
-                <h2>Zona <span id="zona4">?</span></h2>
-                <div class="contenido">
-                    <div class="info">
-                        <p>Decibeles: <span id="decibeles3">0</span> dB</p>
-                        <p>Fecha: <br><span id="fecha3">-</span></p>
+    
+                <div class="zona">
+                    <h2>Zona <span id="zona2">?</span></h2>
+                    <div class="contenido">
+                        <div class="info">
+                            <p>Decibeles: <span id="decibeles2">0</span> dB</p>
+                            <p>Fecha: <br><span id="fecha2">-</span></p>
+                        </div>
+                        <div class="barra-container">
+                            <div class="barra" id="barra2"></div>
+                        </div>
+    
                     </div>
-                    <div class="barra-container">
-                        <div class="barra" id="barra3"></div>
-                    </div>
-
                 </div>
-            </div>
-
-            <div class="zona">
-                <h2>Zona <span id="zona4">?</span></h2>
-                <div class="contenido">
-                    <div class="info">
-                        <p>Decibeles: <span id="decibeles4">0</span> dB</p>
-                        <p>Fecha: <br><span id="fecha4">-</span></p>
+    
+                <div class="zona">
+                    <h2>Zona <span id="zona3">?</span></h2>
+                    <div class="contenido">
+                        <div class="info">
+                            <p>Decibeles: <span id="decibeles3">0</span> dB</p>
+                            <p>Fecha: <br><span id="fecha3">-</span></p>
+                        </div>
+                        <div class="barra-container">
+                            <div class="barra" id="barra3"></div>
+                        </div>
+    
                     </div>
-                    <div class="barra-container">
-                        <div class="barra" id="barra4"></div>
+                </div>
+    
+                <div class="zona">
+                    <h2>Zona <span id="zona4">?</span></h2>
+                    <div class="contenido">
+                        <div class="info">
+                            <p>Decibeles: <span id="decibeles4">0</span> dB</p>
+                            <p>Fecha: <br><span id="fecha4">-</span></p>
+                        </div>
+                        <div class="barra-container">
+                            <div class="barra" id="barra4"></div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
+        <aside class="container"> 
+            <table>
+                <tr>
+                  <th colspan="2">Nivel de intensidad del sonido.</th>
+                </tr>
+                <tr class="d200"><td>200 dB</td><td>Bomba atómica</td></tr>
+                <tr class="d180"><td>180 dB</td><td>Cohete en despegue</td></tr>
+                <tr class="d140"><td>140 dB</td><td>Umbral del dolor</td></tr>
+                <tr class="d130"><td>130 dB</td><td>Avión en despegue</td></tr>
+                <tr class="d120"><td>120 dB</td><td>Motor de avión en marcha</td></tr>
+                <tr class="d110"><td>110 dB</td><td>Concierto / acto cívico</td></tr>
+                <tr class="d100"><td>100 dB</td><td>Perforadora eléctrica</td></tr>
+                <tr class="d90"><td>90 dB</td><td>Tráfico / Pelea de dos personas</td></tr>
+                <tr class="d80"><td>80 dB</td><td>Tren</td></tr>
+                <tr class="d70"><td>70 dB</td><td>Aspiradora</td></tr>
+                <tr class="d60"><td>50/60 dB</td><td>Aglomeración de gente / Lavaplatos</td></tr>
+                <tr class="d40"><td>40 dB</td><td>Conversación</td></tr>
+                <tr class="d20"><td>20 dB</td><td>Biblioteca</td></tr>
+                <tr class="d10"><td>10 dB</td><td>Respiración tranquila</td></tr>
+                <tr class="d0"><td>0 dB</td><td>Umbral de audición</td></tr>
+              </table>
+        </aside>
     </div>
 
-    <script src="script.js"></script>
+    <footer class="footer">
+        <h2 class="no-margin" >@Todos los derechos reservados 2025</h2>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
